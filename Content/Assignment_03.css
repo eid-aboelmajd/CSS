@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/Cairo-VariableFont_wght.ttf');
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+p,
+.title {
+    color: green;
+}
+
+.parent .child .title {
+    color: red;
+}
+
+.parent .title {
+    color: blue;
+}
+
+.first,
+.second,
+.third,
+.four {
+    max-width: 400px;
+    background-color: red;
+    color: #fff;
+    padding: 5px;
+    margin: 10px 0;
+    overflow: hidden;
+    width: fit-content;
+    max-height: 200px;
+    overflow: hidden;
+}

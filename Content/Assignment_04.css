@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/Cairo-VariableFont_wght.ttf');
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+.first {
+    background-color: #eee;
+    border:1px #000 solid;
+    border-radius: 6px;
+}
+
+.text-shadow-1 {
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 2px 2px red , 4px 4px green , 6px 6px blue;
+}
+
+
+.one {
+    text-transform:uppercase;
+}
+
+.two {
+    text-transform:capitalize;
+}
+
+.three {
+    text-transform:lowercase;
+}
+
+.first1,
+.second,
+.third{
+    width: 400px;
+    background-color: #eee;
+    border-radius: 6px;
+    margin:10px 0;
+    padding: 10px;
+}
+
+.second{
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: break-all;
+}
+
+.third{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.third:hover {
+    overflow: visible;
+    white-space: normal;
+}
+
+a {
+background-color:#009688;
+color: #fff;
+text-decoration: none;
+padding: 20px;
+text-align: center;
+border-bottom: 20px solid #00514a;
+border-radius: 6px;
+display: block;
+margin: 50% auto;
+width: 50%;
+font-size: 75px;
+text-transform: capitalize;
+font-weight: 800;
+letter-spacing: 1.5px;
+}
