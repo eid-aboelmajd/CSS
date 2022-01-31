@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/Cairo-VariableFont_wght.ttf');
+}
+
+body {
+    font-family: Cairo, sans-serif;
+
+}
+
+
+.first,
+.second,
+.third {
+    width: 300px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #eee;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+
+:empty {
+    background-color: #ff0000;
+}
+
+.one {
+    background-color: #eee;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 0px 0px 40px;
+    height: 80px;
+    padding-top: 40px;
+}
+
+.one::first-letter {
+    float: left;
+    background-color: red;
+    width: 20px;
+    height: 100%;
+    color: #fff;
+    margin-left: -24px;
+    margin-right: 30px;
+    margin-top: -20px;
+    padding: 20px;
+}
+
+.ass-03 {
+    position: relative;
+    height: 50px;
+    padding-top: 25px;
+    text-align: center;
+    background-color: #eee;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    border-left: 5px solid red;
+}
+
+.ass-03::before {
+    content: attr(data-person);
+    position: absolute;
+    background-color: #ddd;
+    padding: 11px;
+    text-align: center;
+    left: -100px;
+    bottom: 17%;
+    width: 50px;
+}
+
+.ass-03::after{
+    content: "";
+    position: absolute;
+    left: -25px;
+    border: 10px solid red;
+    top: 50%;
+    margin-top: -10px;
+    border-color: transparent #ff0000 transparent transparent;
+}
+
+.ass-04 p{
+    background-color: #eee;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
+    position: relative;
+    counter-increment: element-counter;
+    margin-left: 50px;
+    height: 50px;
+}
+
+.ass-04 p::before{
+    content: counter(element-counter);
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.ass-04 p::after{
+    content: "";
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 5px;
+    height: 100%;
+}
